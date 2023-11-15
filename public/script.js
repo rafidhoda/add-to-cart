@@ -9,4 +9,14 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig)
 
-console.log(app)
+const itemInputEl = document.getElementById("item-input")
+const addButtonEl = document.getElementById("add-button")
+
+let items = []
+
+addButtonEl.addEventListener("click", () => {
+  const inputValue = itemInputEl.value
+
+  items.push(inputValue)
+  console.log(items)
+})
