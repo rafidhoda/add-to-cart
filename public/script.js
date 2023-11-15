@@ -1,4 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"
 
 const firebaseConfig = {
   apiKey: "AIzaSyAcZ0oOMRS0D2DvkmAflK-F8PUvZqdJg_I",
@@ -8,6 +9,9 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig)
+const auth = getAuth(app)
+
+console.log(auth)
 
 const itemInputEl = document.getElementById("item-input")
 const addButtonEl = document.getElementById("add-button")
