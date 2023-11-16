@@ -9,9 +9,16 @@
     <script defer data-domain="addtocart.hoda.app" src="https://plausible.io/js/script.js"></script>
   </head>
   <body>
-    <h1>Add to Cart</h1>
-    <input id="item-input" type="text" placeholder="Milk">
-    <button id="add-button">Add to Cart</button>
+    <section id="view-logged-in">
+      <h1>Add to Cart</h1>
+      <button id="logout-button">Log out</button>
+      <input id="item-input" type="text" placeholder="Milk">
+      <button id="add-button">Add to Cart</button>
+    </section>
+    <section id="view-logged-out">
+      <h1>Add to Cart</h1>
+      <button id="login-with-google">Login with Google</button>
+    </section>
 	<script src="script.js" type="module"></script>
   </body>
 </html>
